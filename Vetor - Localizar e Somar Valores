@@ -1,0 +1,39 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Vetor_Localizando_e_somando_valores
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite 8 numeros:");
+            int[] x = new int[8];
+            int num1 = 0, num2 = 0, soma;
+            for (int i = 0; i < 8; i++)
+            {
+                x[i] = int.Parse(Console.ReadLine());
+            }
+            Console.Write("Posição do valor X desejado (entre 0 e 7):");
+            int a = int.Parse(Console.ReadLine());
+            Console.Write("Posição do valor Y desejado (entre 0 e 7):");
+            int b = int.Parse(Console.ReadLine());
+            for (int i = 0; i < 8; i++)
+            {
+                if (a == i)
+                {
+                    num1 = x[i];
+                }
+                if (b == i)
+                {
+                    num2 = x[i];
+                }
+            }
+            soma = num1 + num2;
+            Console.WriteLine($"Soma dos valores solicitados: {soma}");
+        }
+    }
+}
