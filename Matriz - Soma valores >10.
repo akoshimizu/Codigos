@@ -1,0 +1,22 @@
+  public static void Main(string[] args)
+    {
+      
+        int [,]x = new int [4,4];
+        int soma=0;
+            
+            for (int i=0; i<4; i++)
+            {
+                for (int j=0; j<4; j++)
+                {
+                x[i,j] = int.Parse(Console.ReadLine());
+                
+                
+                    if (x[i,j] > 10)
+                    soma++;
+                }
+                Console.WriteLine();
+            }
+        Console.WriteLine("Quantidade numeros maiores que 10: " +soma);           
+    }
+  }
+}
