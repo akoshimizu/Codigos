@@ -1,1 +1,1 @@
-Olá pessoal,  estes são meus códigos em C# do meu aprendizado.
+Olá pessoal,  estes são alguns códigos em C# com meu aprendizado acadêmico.
